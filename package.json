@@ -5,11 +5,14 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev",
-    "export": "slidev export"
+    "export": "slidev export --output exports/pcto && slidev export --output exports/pcto --format pptx"
   },
   "dependencies": {
     "@slidev/cli": "^51.8.2",
     "@slidev/theme-shibainu": "latest",
     "vue": "^3.5.16"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.53.0"
   }
 }
